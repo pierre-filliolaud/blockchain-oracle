@@ -28,7 +28,8 @@ export const createRequest = ({
     account().then(account => {
       contract.createRequest(urlToQuery, attributeToFetch, {
         from: account,
-        gas: 60000000
+        gas: 4712388,
+        gasPrice: 100000000000
       }, (err, res) => {
         if (err === null) {
           resolve(res);
